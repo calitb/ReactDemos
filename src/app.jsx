@@ -41,15 +41,12 @@ function App() {
        <ReduxComponent2b name={name}/> <br /> <br />
      </MyContext.Provider>
      
-     <ReduxComponent name={name}/>
-     <ReduxComponentb name={name}/> <br /> <br />
+     <Provider store={store}>
+       <ReduxComponent name={name}/>
+       <ReduxComponentb name={name}/> <br /> <br />
+     </Provider>
     </div>
   )
 }
 
-// El siguiente Provider envolviendo al App es solo para el demo ReduxComponent.
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-  , document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

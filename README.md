@@ -22,7 +22,7 @@ This functional component shows how to define, get and set a state using the `us
 
 ## ReduxComponent
 
-Shows how to define a Global State using Redux, the redux Provider wraps the App component in `app.jsx`. 
+Shows how to define a Global State using Redux, the redux Provider wraps the ReduxComponent components in `app.jsx`. 
 
 It has two variation, depending on how to access the state and dispatch inside the child component.
 
