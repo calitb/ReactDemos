@@ -11,6 +11,8 @@ const middleware = webpackMiddleware(compiler, {
   publicPath: config.output.publicPath,
   serverSideRender: true,
   watchOptions: {
+    //aggregateTimeout: 1000,
+    //poll: 10000    
     // Due to iOS devices memory constraints
     // disabling file watching is recommended 
     ignored: /.*/
